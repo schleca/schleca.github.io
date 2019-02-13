@@ -1,0 +1,55 @@
+
+// font-family: 'Viga', sans-serif;
+// font-family: 'PT Mono', monospace;
+// font-family: 'Cousine', monospace;
+// font-family: 'Noto Sans SC', sans-serif;
+// font-family: 'Bevan', cursive;
+// font-family: 'Archivo', sans-serif;
+// font-family: 'Sawarabi Gothic', sans-serif;
+// font-family: 'Tenor Sans', sans-serif;
+
+
+h1 {
+  // font-family: 'PT Mono', monospace;
+  font-family: 'Cousine', monospace;
+  font-size: 32px;
+  z-index: 1;
+  &.huge {
+    font-size: 120px;
+    z-index: 0;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Cousine', monospace;
+  font-weight: bold;
+  line-height: 125%;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: $dark;
+  vertical-align: sub;
+  @include media-breakpoint-up(md) {
+      font-size: 1.0625rem;
+  }
+}
+
+blockquote {
+  font-size: 32px;
+  color: $dark;
+  @include media-breakpoint-up(md) {
+      font-size: 48px;
+  }
+}
+
+h6 {
+  &.full-width {
+    font-size: 300px;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+    // opacity: .1;
+    color: darken(#fafafa, 3%);
+  }
+}
