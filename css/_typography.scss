@@ -7,7 +7,13 @@
 // font-family: 'Archivo', sans-serif;
 // font-family: 'Sawarabi Gothic', sans-serif;
 // font-family: 'Tenor Sans', sans-serif;
-
+p {
+  &.img-description {
+    color: lighten($dark, 5%);
+    font-size: 80%;
+    padding-top: 8px;
+  }
+}
 
 h1 {
   // font-family: 'PT Mono', monospace;
@@ -15,8 +21,17 @@ h1 {
   font-size: 32px;
   z-index: 1;
   &.huge {
-    font-size: 120px;
     z-index: 0;
+    font-size: 70px;
+    @include media-breakpoint-up(sm) {
+      font-size: 80px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 100px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 120px;
+    }
   }
 }
 
@@ -35,6 +50,16 @@ h2 {
   }
 }
 
+h3 {
+  padding-bottom: 16px;
+  @include media-breakpoint-up(md) {
+    // padding-bottom: 24px;
+  }
+}
+ h5 {
+   margin-bottom: 16px;
+ }
+
 blockquote {
   font-size: 32px;
   color: $dark;
@@ -45,11 +70,28 @@ blockquote {
 
 h6 {
   &.full-width {
-    font-size: 300px;
+    top: 70px;
+    font-size: 73px;
+    font-weight: bold;
     position: absolute;
     left: 0px;
     z-index: 0;
-    // opacity: .1;
     color: darken(#fafafa, 3%);
+    @include media-breakpoint-up(sm) {
+      font-weight: normal;
+      top: 48px;
+      display: block;
+      font-size: 140px;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: 185px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 240px;
+    }
+    @include media-breakpoint-up(xl) {
+      top: 0px;
+      font-size: 290px;
+    }
   }
 }
