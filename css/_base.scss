@@ -173,3 +173,20 @@ body {
   background-color: $dark;
   color: white;
 }
+
+.img-modal-btn {
+  cursor: pointer;
+  transition: .5s;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.img-modal-container {
+  background: none;
+  border: none;
+  img {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
