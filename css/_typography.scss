@@ -56,7 +56,11 @@ h3 {
     // padding-bottom: 24px;
   }
 }
- h5 {
+h4 > a {
+  color: $gray-900 !important;
+}
+
+h5 {
    margin-bottom: 16px;
  }
 
