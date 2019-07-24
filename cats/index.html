@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CAT ME</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
+		<!-- <link href="./Silka-Regular.otf" rel="stylesheet"> -->
+		<link rel="stylesheet" type="text/css" href="./cat.css">
+	</head>
+	<body >
+
+
+<!-- <h1 id="title-1">FIND YOUR SPIRIT CAT </h1> -->
+<div class="name-container">
+	<img src="furnando.png" class="name-image" id="catName" />
+</div>
+<div class="tv">
+	<div class="tv-frame-container">
+		<img src="tv.png" class="tv-frame" />
+	</div>
+	<div class="tv-image-container">
+		<img src="http://thecatapi.com/api/images/get?format=src&type=gif" class="tv-image" />
+	</div>
+</div>
+<div class="remote" onclick="location.reload()"></div>
+
+
+<script>
+  
+// var names = ["catinator", "fluff butt", "pickles", "m'leggie", "furnando", "catpachino", "imakat", "jennifurr", "lucifurr", "luke skywhisker", "bob reborn as cat", "chonk of all chonks", "cleo-cat-ra", "shakes-purr", "fur-gie", "master of peets", "wigglebutt", "norty boi", "pantaloons", "flonfmeister", "heckin good gorl", "accempter of all snaccs", "hambina", "A B S O L U T E  U N I T", "i do atacc", "muffin master", "potato", "chonkette", "toasted marshmallow princess"];
+
+var names = ["furnando.png", "skywhisker.png", "shakespurr.png", "catinator.png"];
+
+document.getElementById('catName').src = names[Math.floor(Math.random() * names.length)];
+
+</script>
