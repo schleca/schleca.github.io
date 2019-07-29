@@ -4,6 +4,10 @@ body {
   // background-color: #ededed;
 }
 
+.footer {
+  flex-shrink: 0;
+}
+
 
 .block{
     max-width: 1140px;
@@ -189,4 +193,66 @@ body {
     width: 100%;
     max-width: 1100px;
   }
+}
+
+
+.work-card {
+  overflow: hidden;
+}
+
+.work-card .top-layer {
+  opacity: .9;
+}
+
+.work-card:hover {
+  transform: scale(1.2);
+}
+
+.work-card:hover .top-layer {
+  opacity: .5;
+}
+
+.outer-div {
+  overflow: hidden;
+}
+
+.inner-div {
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+}
+
+.inner-div a > img {
+  opacity: 1;
+}
+
+.inner-div:hover {
+  transform: scale(1.2);
+}
+
+.inner-div:hover a > img {
+  opacity: .7;
+}
+
+.inner-div.inner-div-1 {
+  background-image: url("../images/work/hanen-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.inner-div.inner-div-2 {
+  background-image: url("../images/work/infinity-care-2.png");
+  background-size: 40% auto;
+  background-position: right bottom;
+}
+
+.inner-div.inner-div-3 {
+  background-image: url("../images/work/presto-3.png");
+  background-size: 60% auto;
+  background-position: right bottom;
+}
+
+.inner-div.inner-div-4 {
+  background-image: url("../images/work/cats-4.png");
+  background-size: cover;
+  background-position: center;
 }
