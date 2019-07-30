@@ -33,12 +33,36 @@
     font-style: normal;
 }
 
+
+body {
+  background: linear-gradient(270deg, #4588bf, #5845bf, #b945bf, #bf455f, #bcbf45, #45bf4f);
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 .tv {
 	height: 90vh;
 	width: auto;
 	text-align: center;
 	margin: 0 auto;
-	
+
 
 	position: relative;
 	text-align: center;
@@ -61,7 +85,7 @@
 .tv-frame {
 	width: 450px;
 	/*height: 250px;*/
-	position: relative; 
+	position: relative;
 	left: -50%;
 }
 
@@ -70,7 +94,7 @@
 /*	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;*/
-	position: absolute; 
+	position: absolute;
 	left: 50%;
 	margin-top: 150px;
 /*	width: 250px;
@@ -94,7 +118,7 @@
 .tv-image {
 	width: 280px;
 	height: 250px;
-	position: relative; 
+	position: relative;
 	left: -50%;
 }
 
@@ -126,8 +150,8 @@ h1#title-1 {
 	font-family: 'silkaregular', sans-serif;
 	/*font-family: 'katfont', sans-serif;*/
 	color: #ffbbbb;
-	text-align: center; 
-	padding-top: 16px; 
+	text-align: center;
+	padding-top: 16px;
 	font-size: 120px;
 	margin-top: 0px;
 	text-align: center;
