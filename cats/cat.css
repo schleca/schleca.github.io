@@ -1,0 +1,186 @@
+/*@font-face {
+  font-family: "Silka";
+  src: url("Silka-Regular.otf") format("otf");
+}*/
+
+@font-face {
+    font-family: 'silkaregular';
+    src: url('./fonts/silka-regular-webfont.eot');
+    src: url('./fonts/silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/silka-regular-webfont.woff2') format('woff2'),
+         url('./fonts/silka-regular-webfont.woff') format('woff'),
+         url('./fonts/silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'silkaitalic';
+    src: url('./fonts/silka-regularitalic-webfont.eot');
+    src: url('./fonts/silka-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/silka-regularitalic-webfont.woff2') format('woff2'),
+         url('./fonts/silka-regularitalic-webfont.woff') format('woff'),
+         url('./fonts/silka-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'katfont';
+	src: url('./kat-font.ttf') format('truetype'));
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background: linear-gradient(270deg, #4588bf, #5845bf, #b945bf, #bf455f, #bcbf45, #45bf4f);
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.tv {
+	height: 90vh;
+	width: auto;
+	text-align: center;
+	margin: 0 auto;
+
+
+	position: relative;
+	text-align: center;
+	/*padding-top: 200px;*/
+}
+
+.tv-frame-container {
+	position: absolute;
+	left: 50%;
+	/*margin-top: 100px;*/
+/*	width: 100%;
+	height: 100%;
+	background-image: url('tv.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 400px auto;*/
+	z-index: 2;
+}
+
+.tv-frame {
+	width: 450px;
+	/*height: 250px;*/
+	position: relative;
+	left: -50%;
+}
+
+.tv-image-container {
+	/*background-image: url('http://thecatapi.com/api/images/get?format=src&type=gif');*/
+/*	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;*/
+	position: absolute;
+	left: 50%;
+	margin-top: 150px;
+/*	width: 250px;
+	height: 250px;*/
+	/*position: absolute;*/
+	/*margin: 0 auto;*/
+	z-index: 1;
+}
+
+.name-container {
+	position: absolute;
+	left: 170px;
+	top: 60px;
+	z-index: 4;
+}
+.name-image {
+	width: 275px;
+}
+
+
+.tv-image {
+	width: 280px;
+	height: 250px;
+	position: relative;
+	left: -50%;
+}
+
+.remote {
+	position: absolute;
+	right: 100px;
+	bottom: 0px;
+	width: 250px;
+	height: 100%;
+	background-position: center bottom;
+	background-image: url('remote.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.remote:hover {
+	background-image: url('remote-hover.png');
+	bottom: -30px;
+	width: 350px;
+}
+
+h1#title-1 {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	font-family: 'silkaregular', sans-serif;
+	/*font-family: 'katfont', sans-serif;*/
+	color: #ffbbbb;
+	text-align: center;
+	padding-top: 16px;
+	font-size: 120px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.tv-image-container {
+		margin-top: 100px;
+	}
+	.tv-image {
+		width: 200px;
+		height: 180px;
+	}
+	.tv-frame {
+		width: 300px;
+	}
+	.remote {
+		width: 100%;
+		right: 0px;
+		left: 0px;
+		background-size: 200px auto;
+	}
+	.name-container {
+		width: 100%;
+		right: 0px;
+		left: 0px;
+		top: 0px;
+	}
+	.name-image {
+		width: 145px;
+	}
+}
