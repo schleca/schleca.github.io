@@ -140,11 +140,6 @@ header {
 header .name-title {
 	margin-bottom: 0px;
 	font-size: 1.56em;
-/*	font-weight: bold;
-	display: inline;
-	background: linear-gradient(to right, #314151 0%, #217D9D 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;*/
 }
 .header-links {
 	display: flex;
@@ -217,11 +212,18 @@ header .name-title {
 }
 
 .overlay h2.h1 {
-	font-size: 48px;
+	font-size: 32px;
+	
 	text-decoration: none !important;
 }
 .overlay p.subtitle {
 	margin-top: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+	.overlay h2.h1 {
+		font-size: 48px;
+	}
 }
 
 
