@@ -138,7 +138,7 @@ header {
 	}
 }
 header .name-title {
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	font-size: 1.56em;
 }
 .header-links {
@@ -212,7 +212,7 @@ header .name-title {
 }
 
 .overlay h2.h1 {
-	font-size: 32px;
+	font-size: 48px;
 	
 	text-decoration: none !important;
 }
@@ -222,7 +222,7 @@ header .name-title {
 
 @media only screen and (max-width: 780px) {
 	.overlay h2.h1 {
-		font-size: 48px;
+		font-size: 32px;
 	}
 }
 
