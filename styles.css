@@ -200,7 +200,8 @@ header .name-title {
 }
 
 .overlay .text-container {
-	padding-left: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .overlay,
 .overlay .text-container p,
@@ -225,6 +226,9 @@ header .name-title {
 @media only screen and (max-width: 780px) {
 	.overlay h2.h1 {
 		font-size: 32px;
+	}
+	.overlay .text-container {
+		padding-left: 40px;
 	}
 }
 
