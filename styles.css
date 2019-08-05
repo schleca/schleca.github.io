@@ -34,6 +34,7 @@ body {
 	/*font-family: 'Roboto', sans-serif;*/
 	color: #444444;
 	margin: 8px 0px;
+	box-sizing: border-box;
 }
 
 .h1 {
@@ -119,6 +120,7 @@ strong {
 /*HEADER*/
 
 header {
+	box-sizing: border-box;
     float: none;
     margin-left: auto;
     margin-right: auto;
