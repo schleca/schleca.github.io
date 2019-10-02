@@ -4,7 +4,7 @@
   background: url('../../images/toTopArrow.png') no-repeat center center transparent;
   height: 58px;
   width: 16px;
-  border: none;
+  border: none !important;
 
   &:hover {
     background: url('../../images/toTopArrow.png') no-repeat center center transparent;

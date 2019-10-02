@@ -40,6 +40,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: auto;
   }
  .button {
     text-decoration: none;
@@ -57,7 +58,8 @@
     background-color: #B81A0A;
     white-space: normal;
     margin: 0 auto;
-    margin-right: $spacing-small;
+    margin: $spacing-small;
+
     &:hover{
       background-color: #A01808;
     }
@@ -78,6 +80,7 @@
     background-color: #fff;
     white-space: normal;
     margin: 0 auto;
+    margin: $spacing-small;
     &:hover{
       border: 2px solid #A01808;
       color: #A01808;
