@@ -1,12 +1,12 @@
 @import '../../styles/utils.scss';
 
 .scrollTop {
-  background: url('../../images/toTopArrow.png') no-repeat center center transparent;
-  height: 58px;
-  width: 16px;
+  background: url('../../images/toTopArrow.png') no-repeat center center transparent !important;
+  height: 58px !important;
+  width: 16px !important;
   border: none !important;
 
   &:hover {
-    background: url('../../images/toTopArrow.png') no-repeat center center transparent;
+    background: url('../../images/toTopArrow.png') no-repeat center center transparent !important;
   }
 }
