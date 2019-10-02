@@ -1,0 +1,37 @@
+@import '../../styles/utils.scss';
+
+.header {
+  margin: $spacing-x-large 0;
+
+}
+
+.title {
+  margin-bottom: $spacing-regular;
+
+  // override the internal link style
+  a {
+    color: $color-primary;
+    font-size: $font-size-large;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }  
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  a {    
+    margin-right: $spacing-regular;
+    font-family: $font-family-light;
+  }
+
+  .selected {
+    a {
+      color: $color-primary;
+    }
+  }
+}

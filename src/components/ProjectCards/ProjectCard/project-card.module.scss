@@ -1,0 +1,10 @@
+@import '../../../styles/utils.scss';
+
+.container {
+  margin-bottom: $spacing-xx-large;
+
+  .cover {
+    width: 100%;
+    margin-bottom: $spacing-regular;
+  }
+}

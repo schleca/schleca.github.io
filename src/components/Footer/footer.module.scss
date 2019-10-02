@@ -1,0 +1,12 @@
+@import '../../styles/utils.scss';
+
+.footer {
+  padding: $spacing-regular;
+  text-align: center;
+  background: $color-background-footer;
+
+  font-family: $font-family-light;
+  color: $color-primary;
+  font-size: $font-size-footer;
+  line-height: 1.3;
+}

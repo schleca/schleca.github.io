@@ -1,0 +1,31 @@
+@import '../../styles/utils.scss';
+
+.container {
+  display: inline-block;
+  margin-top: $spacing-small;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-primary;
+
+  font-size: $font-size-small;
+  letter-spacing: 1.3px;
+
+
+  .arrow {
+    margin-left: $spacing-small;
+  }
+
+  &:hover + .underline {
+    width: 100%;
+  }
+}
+
+.underline {
+  background-color: $color-primary;
+  height: 1px;
+  margin-top: $spacing-small / 2;
+  width: calc(100% - 41px); // 41 is 31px for the image + spacing-small
+  transition: ease-in-out 0.3s;
+}

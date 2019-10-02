@@ -1,0 +1,89 @@
+@import '../../styles/utils.scss';
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2 *  $spacing-x-large;
+
+  @include mq($until: tablet) {
+    flex-flow: wrap;
+  }
+
+  .alissa {
+    display: flex;
+    flex-direction: column;
+    @include mq($until: tablet) {
+      margin: 0 auto;
+    }
+
+    .alissa-img {
+      width: 300px;
+      margin-bottom: $spacing-large;
+    }
+
+  }
+
+  .text {
+    @include mq($from: tablet) {
+      margin-left: $spacing-large;
+    }
+
+  }
+
+  .technologies-container {
+    margin-top: $spacing-x-large;
+    ul {
+      margin-bottom: $spacing-regular;
+      list-style: disc;
+      margin-left: $spacing-regular;
+      li {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+      border-radius: 100%;
+      .logo {
+        width: 32px;
+        padding: 10px;
+      }
+      &:hover {
+        background-color: $not-so-light-grey;
+        .logo {
+          opacity: .8;
+        }
+      }
+    }
+  }
+  .show-mobile {
+    // text-align: center;
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+  .show-desktop {
+    text-align: center;
+    @include mq($until: tablet) {
+      display: none;
+    }
+  }
+  .cv {
+    text-align: center;
+    margin-top: $spacing-small;
+    a {
+      text-decoration: none;
+      color: $color-link;
+    }
+    &:hover a {
+      color: $color-link-hover;
+    }
+  }
+}
