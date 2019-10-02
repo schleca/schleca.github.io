@@ -1,9 +1,0 @@
-@import '../../styles/utils.scss';
-
-.wrapper {
-	max-width: 900px;
-	min-width: 320px;
-	width: calc(100% - #{$spacing-regular * 2});
-	margin: auto;
-	padding: $spacing-regular;
-}
